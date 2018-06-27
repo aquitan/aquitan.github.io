@@ -26,6 +26,11 @@ $(document).ready(function(){
 		$('.menu_burger_active').removeClass('menu_burger_active');
 		$('.menu__small').removeClass('menu__small_active');
 	})
+
+	$('.menu__small a').click(function() {
+		$('.menu_burger_active').removeClass('menu_burger_active');
+		$('.menu__small').removeClass('menu__small_active');
+	})
 })
 
 
