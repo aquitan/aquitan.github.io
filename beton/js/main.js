@@ -31,6 +31,33 @@ $(document).ready(function(){
 		$('.menu_burger_active').removeClass('menu_burger_active');
 		$('.menu__small').removeClass('menu__small_active');
 	})
+
+	$('.on_granit').on('click', function(){
+		$('.on_granit table').toggleClass('on_granit_active');
+	})
+
+	$('.on_shlack').on('click', function(){
+		$('.on_shlack table').toggleClass('on_shlack_active');
+	})
+
+	$('.on_scheben').on('click', function(){
+		$('.on_scheben table').toggleClass('on_shlack_active');
+	})
+
+	$('.call_icon').on('click', function() {
+		$('.calling-form').fadeIn(500);
+		$('.call_icon').fadeOut(500);
+	})
+	$('.close_form').on('click', function() {
+		$('.calling-form').fadeOut(500);
+		$('.call_icon').fadeIn(500);
+	})
+
+	$('.fbs_block').on('click', function(){
+		$('.fbs_block table').toggleClass('fbs_block_active');
+	})
+
+
 })
 
 

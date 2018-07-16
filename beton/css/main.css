@@ -11,8 +11,89 @@ body {
 section {
   overflow: hidden; }
 
+.call_icon {
+  display: block;
+  position: fixed;
+  top: 100px;
+  right: 100px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #f0be44;
+  z-index: 99999;
+  font-size: 50px;
+  animation: scaling 3s infinite linear;
+  cursor: pointer; }
+  .call_icon .fa {
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    top: 50%;
+    margin-top: -25px;
+    animation: calling 2s infinite linear;
+    animation-fill-mode: forwards; }
+
+@keyframes calling {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(45deg); } }
+
+@keyframes scaling {
+  50% {
+    transform: scale(1.1); } }
+
+.calling-form {
+  display: none;
+  width: 400px;
+  height: 500px;
+  background-color: #484848;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  margin-left: -200px;
+  z-index: 9999;
+  border: 2px solid #f0be44;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 50px; }
+  .calling-form h3 {
+    color: #f0be44; }
+  .calling-form input {
+    width: 90%;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    outline: none; }
+  .calling-form button {
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #f0be44;
+    color: #484848;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    outline: none; }
+    .calling-form button:hover {
+      color: #fff;
+      transform: scale(1.1); }
+  .calling-form .fa {
+    color: #f0be44;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.2s; }
+    .calling-form .fa:hover {
+      transform: rotate(45deg); }
+
 header {
-  background-image: url(/image/header_bg.png);
+  background-image: url(/wp-content/themes/wp_beton/image/header_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left center;
@@ -24,10 +105,11 @@ header {
 
 .header__top {
   width: 100%;
-  min-height: 150px;
+  min-height: 180px;
+  max-height: 400px;
   background-color: rgba(72, 72, 72, 0.62); }
   .header__top .main__logo {
-    font-size: 55px;
+    font-size: 75px;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
@@ -37,16 +119,25 @@ header {
     .header__top .main__logo span {
       color: #f0be44; }
   .header__top .main__logo_small {
-    font-size: 18px;
+    font-size: 24px;
     color: #f0be44;
     text-align: center;
     display: block;
     margin-bottom: 0; }
   .header__top .main__logo_image {
+    display: block;
     line-height: 152px;
     text-align: center;
     display: inline-block;
-    padding-right: 100px; }
+    padding-right: 100px;
+    max-height: 200px;
+    position: relative; }
+
+.logo__name {
+  position: absolute;
+  color: #fff;
+  left: 34%;
+  top: 45%; }
 
 .header__bottom {
   width: 100%;
@@ -173,6 +264,12 @@ header {
   .beton__about .beton__about_img {
     float: right;
     margin-left: 15px; }
+
+.about__wrap h2 {
+  text-transform: uppercase;
+  font-size: 32px;
+  color: #f0be44;
+  text-align: center; }
 
 .clearfix:after {
   content: '';
@@ -360,23 +457,49 @@ header {
   .beton__item:hover span {
     display: inline-block; }
 
+@keyframes bigger {
+  to {
+    transform: scale(1.2); } }
+
 .prajs {
   text-align: center; }
   .prajs h2 {
     font-size: 48px;
     color: #f0be44; }
-  .prajs__table {
-    width: 100%; }
-    .prajs__table table {
+  .prajs .price__item {
+    width: 100%;
+    margin-top: 50px; }
+    .prajs .price__item .fa {
+      color: #f0be44;
+      animation: bigger 2s infinite linear;
+      cursor: pointer; }
+    .prajs .price__item h3 {
+      font-size: 35px;
+      text-transform: uppercase;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.5s; }
+      .prajs .price__item h3:hover {
+        color: #f0be44; }
+    .prajs .price__item table {
       width: 100%;
       color: #fff;
       border: 2px solid #fff;
       text-transform: uppercase;
       margin-top: 50px;
-      font-size: 22px; }
-      .prajs__table table td, .prajs__table table th {
+      font-size: 22px;
+      display: none; }
+      .prajs .price__item table td, .prajs .price__item table th {
         border: 2px solid #fff;
         padding: 5px; }
+    .prajs .price__item .on_granit_active {
+      display: table; }
+    .prajs .price__item .on_shlack_active {
+      display: table; }
+    .prajs .price__item .on_scheben_active {
+      display: table; }
+    .prajs .price__item .fbs_block_active {
+      display: table; }
 
 .map__wrap {
   margin-top: 100px;
@@ -409,7 +532,16 @@ header {
       color: #f0be44;
       font-size: 30px;
       text-align: center; }
+.contacts__wrap .phones a {
+  text-decoration: none;
+  color: #fff;
+}
 
+.contacts__wrap .mail {
+  text-decoration: none;
+  color: #fff;
+
+}
 #map {
   width: 100%;
   height: 600px; }
@@ -490,7 +622,15 @@ header {
     text-align: center;
     height: 84px; }
   .products h2 {
-    font-size: 32px; } }
+    font-size: 32px; }
+  .call_icon {
+    height: 50px;
+    width: 50px;
+    right: 20px; }
+    .call_icon .fa {
+      font-size: 32px;
+      top: 67%;
+      left: 62%; } }
 
 @media (min-width: 320px) and (max-width: 671px) {
   .header__bottom .header__menu {
@@ -499,15 +639,6 @@ header {
     display: block; }
   .main__content_logo {
     font-size: 46px; }
-  .about__wrap {
-    height: 0;
-    overflow: hidden;
-    transition: all 0.5s; }
-  .about__details {
-    display: block;
-    text-align: center;
-    font-size: 48px;
-    color: #f0be44; }
   .services__left {
     width: 100vw; }
     .services__left_line {
@@ -538,14 +669,47 @@ header {
     margin-left: 0;
     display: block;
     text-align: center;
-    height: 84px; } }
+    height: 84px; }
+  .price__item .fa {
+    display: block; }
+  .call_icon {
+    height: 50px;
+    width: 50px;
+    right: 20px; }
+    .call_icon .fa {
+      font-size: 32px;
+      top: 67%;
+      left: 62%; }
+  .calling-form {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    height: 100%; } }
 
 @media (min-width: 672px) and (max-width: 766px) {
   .header__top .main__logo_image {
     padding: 0;
-    padding-left: 0; } }
+    padding-left: 0; }
+  .call_icon {
+    height: 50px;
+    width: 50px;
+    right: 20px; }
+    .call_icon .fa {
+      font-size: 32px;
+      top: 67%;
+      left: 62%; } }
 
 @media (min-width: 767px) and (max-width: 819px) {
   .header__top .main__logo_image {
     padding: 0;
-    padding-left: 0; } }
+    padding-left: 0; }
+  .call_icon {
+    height: 50px;
+    width: 50px;
+    right: 20px; }
+    .call_icon .fa {
+      font-size: 32px;
+      top: 67%;
+      left: 62%; } }
