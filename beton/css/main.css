@@ -93,7 +93,7 @@ section {
       transform: rotate(45deg); }
 
 header {
-  background-image: url(/image/header_bg.png);
+  background-image: url(image/header_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left center;
