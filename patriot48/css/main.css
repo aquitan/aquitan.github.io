@@ -26,7 +26,7 @@ header {
     height: 120%;
     top: -10%;
     left: 0%;
-    background: url(/img/header-bg.png);
+    background: url(/patriot48/img/header-bg.png);
     background-size: cover;
     z-index: -1;
     overflow: hidden; }
@@ -146,7 +146,7 @@ header {
     height: 110%;
     top: -10%;
     left: 0%;
-    background: url(/img/about-bg.png);
+    background: url(/patriot48/img/about-bg.png);
     background-size: cover;
     overflow: hidden; }
 
@@ -307,7 +307,7 @@ header {
   height: 150%;
   top: -20%;
   left: -30%;
-  background: url(/img/nastya.jpg) 0 0 repeat;
+  background: url(/patriot48/img/nastya.jpg) 0 0 repeat;
   background-size: cover;
   transform: rotate(45deg); }
 
@@ -318,7 +318,7 @@ header {
   height: 180%;
   top: -40%;
   left: -15%;
-  background: url(/img/mary.jpg) 0 0 repeat;
+  background: url(/patriot48/img/mary.jpg) 0 0 repeat;
   background-size: cover;
   transform: rotate(45deg); }
 
@@ -329,7 +329,7 @@ header {
   height: 180%;
   top: -30%;
   left: -30%;
-  background: url(/img/ruslan.jpg) 0 0 repeat;
+  background: url(/patriot48/img/ruslan.jpg) 0 0 repeat;
   background-size: cover;
   transform: rotate(45deg); }
 
@@ -340,7 +340,7 @@ header {
   height: 165%;
   top: -40%;
   left: -20%;
-  background: url(/img/katya.jpg) 0 0 repeat;
+  background: url(/patriot48/img/katya.jpg) 0 0 repeat;
   background-size: cover;
   transform: rotate(45deg); }
 
@@ -351,7 +351,7 @@ header {
   height: 160%;
   top: -20%;
   left: -30%;
-  background: url(/img/angelina.jpg) 0 0 repeat;
+  background: url(/patriot48/img/angelina.jpg) 0 0 repeat;
   background-size: cover;
   transform: rotate(45deg); }
 
@@ -362,7 +362,7 @@ header {
   height: 150%;
   top: -25%;
   left: -30%;
-  background: url(/img/anya.jpg) 0 0 repeat;
+  background: url(/patriot48/img/anya.jpg) 0 0 repeat;
   background-size: cover;
   transform: rotate(45deg); }
 
@@ -373,7 +373,7 @@ header {
   height: 155%;
   top: -20%;
   left: -30%;
-  background: url(/img/natasha.jpg) 0 0 repeat;
+  background: url(/patriot48/img/natasha.jpg) 0 0 repeat;
   background-size: cover;
   transform: rotate(45deg); }
 
@@ -384,7 +384,7 @@ header {
   height: 150%;
   top: -25%;
   left: -30%;
-  background: url(/img/david.jpg) 0 0 repeat;
+  background: url(/patriot48/img/david.jpg) 0 0 repeat;
   background-size: cover;
   transform: rotate(45deg); }
 
@@ -516,7 +516,7 @@ header {
 /* Event-styles*/
 .event-block {
   min-height: 120vh;
-  background-image: url(/img/event-bg.png);
+  background-image: url(/patriot48/img/event-bg.png);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -590,7 +590,7 @@ header {
     content: '';
     display: block;
     position: absolute;
-    background-image: url(/img/rombs.png);
+    background-image: url(/patriot48/img/rombs.png);
     background-repeat: no-repeat;
     background-position: 0% 0;
     height: 100%;
@@ -601,7 +601,7 @@ header {
     content: '';
     display: block;
     position: absolute;
-    background-image: url(/img/rombs.png);
+    background-image: url(/patriot48/img/rombs.png);
     background-repeat: no-repeat;
     background-position: 100% 120%;
     height: 100%;
@@ -678,7 +678,7 @@ header {
     height: 160%;
     top: -30%;
     left: -30%;
-    background-image: url(/img/img-7843.png);
+    background-image: url(/patriot48/img/img-7843.png);
     background-size: cover;
     transform: rotate(-43deg); }
 
@@ -695,7 +695,7 @@ header {
 .footer {
   height: 360px;
   width: 100%;
-  background-image: url(/img/fon.png);
+  background-image: url(/patriot48/img/fon.png);
   background-size: cover;
   position: relative; }
 
